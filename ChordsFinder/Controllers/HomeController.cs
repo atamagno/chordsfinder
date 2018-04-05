@@ -13,17 +13,23 @@ namespace ChordsFinder.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Song()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult MySongs()
         {
-            ViewBag.Message = "Your contact page.";
+            return View();
+        }
 
+        public ActionResult UploadSong()
+        {
+            return View();
+        }
+
+        public ActionResult SearchResults()
+        {
             return View();
         }
     }
