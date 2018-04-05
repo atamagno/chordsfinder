@@ -3,5 +3,324 @@
     ViewBag.Title = "Song";
 }
 
-<h2>Song</h2>
+<div style="display: flex; justify-content: center; padding-top: 50px;">
+
+    <div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <button id="metronomeBtn" onclick="startMetronome();">Play along</button>
+            <input type="range">
+        </div>
+
+        <div style="padding-top: 30px; display: flex;">
+
+            <div>
+                <div class="chord-letter">
+                    <div class="chord-container" style="display: none;">
+                        Am7
+                    </div>
+                    Am7
+                </div>
+                <div>
+                    <span style="font-weight: bold;">G</span>uess it's true, I'm not
+                </div>
+            </div>
+
+            <div>
+                &nbsp;
+            </div>
+
+            <div>
+                <div class="chord-letter">
+                    <div class="chord-container" style="display: none;">
+                        F
+                    </div>
+                    F
+                </div>
+                <div>
+                    <span style="font-weight: bold;">g</span>ood at a one-ni
+                </div>
+            </div>
+
+            <div>
+                <div class="chord-letter">
+                    <div class="chord-container" style="display: none;">
+                        C
+                    </div>
+                    C
+                </div>
+                <div>
+                    <span style="font-weight: bold;">g</span>th stand
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--<div style="padding-top: 30px;">
+            <span class="chord-letter"><div class="chord-container">Am7</div>G</span>uess it's true, I'm not <span class="chord-letter"><div class="chord-container">F</div>g</span>ood at a one-ni<span class="chord-letter"><div class="chord-container">C</div>g</span>ht stand
+        </div>-->
+
+        <div style="display: flex; padding-top: 2px;">
+            <div id="note1" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note2" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note3" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note4" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note5" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note6" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note7" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note8" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note9" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note10" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note11" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note12" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note13" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note14" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note15" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+        </div>
+
+        <div style="padding-top: 30px; display: flex;">
+
+            <div>
+                <div class="chord-letter">
+                    <div class="chord-container" style="display: none;">
+                        Am7
+                    </div>
+                    Am7
+                </div>
+                <div>
+                    <span style="font-weight: bold;">B</span>ut I still need l
+                </div>
+            </div>
+
+            <div>
+                <div class="chord-letter">
+                    <div class="chord-container" style="display: none;">
+                        F
+                    </div>
+                    F
+                </div>
+                <div>
+                    <span style="font-weight: bold;">o</span>ve cause I'm just a m
+                </div>
+            </div>
+
+            <div>
+                <div class="chord-letter">
+                    <div class="chord-container" style="display: none;">
+                        C
+                    </div>
+                    C
+                </div>
+                <div>
+                    <span style="font-weight: bold;">a</span>n
+                </div>
+            </div>
+
+        </div>
+
+        <div style="display: flex; padding-top: 2px;">
+            <div id="note16" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note17" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note18" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note19" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note20" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note21" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note22" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note23" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note24" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note25" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note26" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note27" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note28" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note29" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note30" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+        </div>
+
+        <div style="padding-top: 30px; display: flex;">
+
+            <div>
+                <div class="chord-letter">
+                    <div class="chord-container" style="display: none;">
+                        Am7
+                    </div>
+                    Am7
+                </div>
+                <div>
+                    <span style="font-weight: bold;">T</span>hese nights never
+                </div>
+            </div>
+
+            <div>
+                &nbsp;
+            </div>
+
+            <div>
+                <div class="chord-letter">
+                    <div class="chord-container" style="display: none;">
+                        F
+                    </div>
+                    F
+                </div>
+                <div>
+                    <span style="font-weight: bold;">s</span>eem to go to
+                </div>
+            </div>
+
+            <div>
+                &nbsp;
+            </div>
+
+            <div>
+                <div class="chord-letter">
+                    <div class="chord-container" style="display: none;">
+                        C
+                    </div>
+                    C
+                </div>
+                <div>
+                    <span style="font-weight: bold;">p</span>lan
+                </div>
+            </div>
+
+        </div>
+
+        <div style="display: flex; padding-top: 2px;">
+            <div id="note31" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note32" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note33" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note34" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note35" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note36" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note37" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note38" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note39" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note40" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note41" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note42" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note43" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note44" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note45" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+        </div>
+
+        <div style="padding-top: 30px; display: flex;">
+
+            <div>
+                <div class="chord-letter">
+                    <div class="chord-container" style="display: none;">
+                        Am7
+                    </div>
+                    Am7
+                </div>
+                <div>
+                    <span style="font-weight: bold;">I </span>don't want you to l
+                </div>
+            </div>
+
+            <div>
+                <div class="chord-letter">
+                    <div class="chord-container" style="display: none;">
+                        F
+                    </div>
+                    F
+                </div>
+                <div>
+                    <span style="font-weight: bold;">e</span>ave, will you hold my h
+                </div>
+            </div>
+
+            <div>
+                <div class="chord-letter">
+                    <div class="chord-container" style="display: none;">
+                        C
+                    </div>
+                    C
+                </div>
+                <div>
+                    <span style="font-weight: bold;">a</span>nd?
+                </div>
+            </div>
+
+        </div>
+
+        <div style="display: flex; padding-top: 2px;">
+            <div id="note46" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note47" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note48" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note49" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note50" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note51" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note52" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note53" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note54" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note55" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note56" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note57" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note58" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note59" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+            <div id="note60" style="width: 20px; height: 4px; border: 1px solid black; border-radius: 2px; margin-right: 2px;"></div>
+        </div>
+    </div>
+
+    @*<div style="width: 300px; height: 440px; padding-top: 20px; border: 1px solid black;" id="chordCarrousel">*@
+    <div style="width: 300px; height: 440px; padding-top: 20px;" id="chordCarrousel">
+
+        <div id="chordCarrouselContainer" style="position: relative; top: -380px">
+
+            <div class="chord4" style="opacity: 0; margin: 0 auto 20px; width: 100px; height: 100px; border-radius: 16px; box-shadow: 0 0px 15px rgba(36,37,38,0.1); display: flex; justify-content: center; align-items: center;">
+
+                <div style="font-size: 70px;">
+                    E
+                </div>
+
+            </div>
+
+            <div class="chord3" style="opacity: 0; margin: 0 auto 20px; width: 100px; height: 100px; border-radius: 16px; box-shadow: 0 0px 15px rgba(36,37,38,0.1); display: flex; justify-content: center; align-items: center;">
+
+                <div style="font-size: 70px;">
+                    F
+                </div>
+
+            </div>
+
+            <div class="chord2" style="opacity: 0; margin: 0 auto 20px; width: 100px; height: 100px; border-radius: 16px; box-shadow: 0 0px 15px rgba(36,37,38,0.1); display: flex; justify-content: center; align-items: center;">
+
+                <div style="font-size: 70px;">
+                    C
+                </div>
+
+            </div>
+
+            <div class="chord1" style="opacity: 0.1; margin: 0 auto 20px; width: 100px; height: 100px; border-radius: 16px; box-shadow: 0 0px 15px rgba(36,37,38,0.1); display: flex; justify-content: center; align-items: center;">
+
+                <div style="font-size: 70px;">
+                    A
+                </div>
+
+            </div>
+
+        </div>
+
+        @*<div class="chord6" style="position: relative; margin: auto; width: 100px; text-align: center;">
+                A
+            </div>
+            <div class="chord5" style="position: relative; margin: auto; width: 100px; text-align: center;">
+                B
+            </div>
+            <div class="chord4" style="position: relative; margin: auto; width: 100px; text-align: center;">
+                C
+            </div>
+            <div class="chord3" style="position: relative; margin: auto; width: 100px; text-align: center;">
+                D
+            </div>
+            <div class="chord2" style="position: relative; margin: auto; width: 100px; text-align: center;">
+                E
+            </div>
+            <div class="chord1" style="position: relative; margin: auto; width: 100px; text-align: center;">
+                F
+            </div>*@
+
+    </div>
+
+</div>
 

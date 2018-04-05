@@ -1,7 +1,160 @@
 ﻿
 @{
-    ViewBag.Title = "UploadSong";
+    ViewBag.Title = "Upload";
 }
 
-<h2>UploadSong</h2>
+<div style="display: flex; justify-content: center; align-items: center; padding-top: 10px;">
+    <input type="text" class="form-control" placeholder="Song duration" />
+    <input type="button" class="btn btn-default" value="Continue" style="margin-left: 5px;" />
+</div>
 
+<div style="border-bottom: 1px solid lightgray;">Chords</div>
+<div style="display: flex; justify-content: space-around; align-items: center; padding-top: 10px; flex-wrap: wrap;">
+    <div style="background-color: white; width: 20px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08); display: flex; justify-content: center; align-items: center; cursor: pointer;">C</div>
+    <div style="background-color: white; width: 20px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08); display: flex; justify-content: center; align-items: center; cursor: pointer;">D</div>
+    <div style="background-color: white; width: 20px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08); display: flex; justify-content: center; align-items: center; cursor: pointer;">E</div>
+    <div style="background-color: white; width: 20px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08); display: flex; justify-content: center; align-items: center; cursor: pointer;">F</div>
+    <div style="background-color: white; width: 20px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08); display: flex; justify-content: center; align-items: center; cursor: pointer;">G</div>
+    <div style="background-color: white; width: 20px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08); display: flex; justify-content: center; align-items: center; cursor: pointer;">A</div>
+    <div style="background-color: white; width: 20px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08); display: flex; justify-content: center; align-items: center; cursor: pointer;">B</div>
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center; padding-top: 10px;">
+    <div style="font-size: 30px; background-color: white; width: 800px; padding: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);">
+        <span class="song-letter">S</span><span class="song-letter">o</span>metimes I feel like I don't have a partner.<br />
+        <div>Sometimes I feel like my only friend</div>
+        <div>Is the city I live in</div>
+        <div>The city of angels</div>
+        <div>Lonely as I am together we cry</div>
+    </div>
+</div>
+
+@*<div style="border-bottom: 1px solid lightgray; padding-top: 20px;">Pentragram</div>
+
+    <div style="padding-top: 20px;">00:00</div>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+    </div>
+
+    <div style="padding-top: 20px;">01:00</div>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+    </div>
+
+    <div style="padding-top: 20px;">02:00</div>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+    </div>
+
+    <div style="padding-top: 20px;">03:00</div>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+        <div style="background-color: white; width: 4px; height: 20px; margin-top: 10px; border-radius: 3px; box-shadow: 0 6px 15px rgba(36,37,38,0.08);"></div>
+    </div>*@

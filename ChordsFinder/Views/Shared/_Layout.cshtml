@@ -6,8 +6,49 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inconsolata', monospace;
+            /*font-size: 22px;*/
+        }
+
+        /*.chord-letter {
+            position: relative;
+            font-weight: bold;
+        }*/
+
+        .chord-letter {
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+        }
+
+        /*.chord-container {
+            position: absolute;
+            top: -20px;
+        }*/
+
+        .chord-container {
+            position: absolute;
+            bottom: 20px;
+            box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+            border-radius: 4px;
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .song-letter {
+        }
+    </style>
 </head>
-<body>
+<body style="background-color: #f6f6f6;">
     @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -36,10 +77,85 @@
     </div>
     *@
 
-    @RenderBody()
+    <div class="container body-content">
+        @RenderBody()
+    </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    <script>
+
+        var currentChord = 0;
+        function moveChords(backwards) {
+
+            currentChord = backwards ? currentChord - 1 : currentChord + 1;
+
+            if (backwards) {
+                $("#chordCarrouselContainer").animate({ "top": "-=120px" }, "slow");
+            } else {
+                $("#chordCarrouselContainer").animate({ "top": "+=120px" }, "slow");
+            }
+
+            $(".chord" + (currentChord + 2)).css({ opacity: "0" }, "slow");
+            $(".chord" + (currentChord + 1)).animate({ height: "100px", width: "100px", opacity: "0.1" }, "slow");
+            $(".chord" + currentChord).animate({ height: "200px", width: "200px", opacity: "1" }, "slow");
+            $(".chord" + (currentChord - 1)).animate({ height: "100px", width: "100px", opacity: "0.1" }, "slow");
+            $(".chord" + (currentChord - 2)).css({ opacity: "0" }, "slow");
+        }
+
+        var metronomeOn = false, metronomeTimer;
+        function startMetronome() {
+
+            setInterval(function () {
+                moveChords();
+            }, 1000);
+
+            metronomeOn = !metronomeOn;
+
+            if (metronomeOn) {
+
+                $("[id^='note']").css('background-color', 'white');
+
+                $('#metronomeBtn').html('Stop Metronome');
+
+                var noteNbr = 1;
+                metronomeTimer = setInterval(function () {
+
+                    $('#note' + (noteNbr - 1)).css('background-color', 'white');
+                    $('#note' + noteNbr).css('background-color', '#ff6347');
+
+                    noteNbr++;
+
+                }, 400);
+
+            } else {
+
+                $('#metronomeBtn').html('Start Metronome');
+
+                clearInterval(metronomeTimer);
+            }
+        }
+
+        $(".chord-letter").hover(
+            function () {
+                //$(this).find('.chord-container').fadeIn();
+                $(this).find('.chord-container').show();
+            }, function () {
+                $(this).find('.chord-container').fadeOut();
+            }
+        );
+
+        $(".song-letter").hover(
+            function () {
+                $(this).css('color', 'red').css('font-weight', 'bold');
+            }, function () {
+                $(this).css('color', 'black').css('font-weight', 'normal');
+            }
+        );
+
+    </script>
+
 </body>
 </html>
